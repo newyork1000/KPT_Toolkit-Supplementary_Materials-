@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this dataset, tool, or software, please cite it as below."
+title: "KPT Governance Toolkit: From Knowledge Chaos to Policy Clarity in Cleaner Production Governance"
+abstract: "A decision-support toolkit (Excel + Python script) based on the Knowledge-Power Topology (KPT) framework, enabling policymakers to select logically consistent policy packages (e.g., subsidy, certification, training) within 5 minutes, tailored to local knowledge types and power configurations."
+authors:
+  - family-names: "Li"
+    given-names: "Wei"
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # 请替换为真实 ORCID（如果有）
+  - family-names: "Zhang"
+    given-names: "Ming"
+    orcid: "https://orcid.org/0000-0000-0000-0001"  # 请替换为真实 ORCID（如果有）
+  - family-names: "Chen"
+    given-names: "Xia"
+    orcid: "https://orcid.org/0000-0000-0000-0002"  # 请替换为真实 ORCID（如果有）
+version: "1.0.0"
+date-released: "2024-12-01"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/yourusername/KPT-Toolkit"
+doi: "10.5281/zenodo.xxxxx"  # 请替换为 Zenodo 生成的 DOI
+url: "https://doi.org/10.5281/zenodo.xxxxx"
+keywords:
+  - "cleaner production governance"
+  - "knowledge-power topology"
+  - "policy toolkit"
+  - "sustainable agriculture"
+  - "decision support system"
