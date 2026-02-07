@@ -1,0 +1,25 @@
+name: Trigger Zenodo DOI
+on:
+  release:
+    types: [published]
+
+jobs:
+  zenodo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Zenodo
+        run: |
+          curl -X POST https://zenodo.org/api/hooks/receivers/github/events/ \
+            -H "Content-Type: application/json" \
+            -H "X-GitHub-Event: release" \
+            -d '{
+              "action": "published",
+              "release": {
+                "tag_name": "${{ github.event.release.tag_name }}",
+                "html_url": "${{ github.event.release.html_url }}"
+              },
+              "repository": {
+                "full_name": "${{ github.repository }}",
+                "html_url": "https://github.com/${{ github.repository }}"
+              }
+            }'
